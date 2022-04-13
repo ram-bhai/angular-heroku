@@ -1,0 +1,43 @@
+<div class="container d-flex justify-content-center align-items-center">
+    <div class="card">
+        <div class="p-3 border-bottom d-flex align-items-center justify-content-center">
+            <h5>Login in Vastram</h5>
+        </div>
+        <div class="p-3 px-4 py-4 border-bottom"> <input type="text" class="form-control mb-2" placeholder="Email/Username" />
+            <div class="form"> <input type="text" class="form-control" placeholder="Password" />
+                <a href="#">Forget? password</a> </div>
+            <button class="btn btn-danger btn-block continue">Continue</button>
+            <div class="d-flex justify-content-center align-items-center mt-3 mb-3">
+                <span class="line"></span>
+                <small class="px-2 line-text">OR</small>
+                <span class="line"></span> </div>
+            <button class="btn btn-danger btn-block continue facebook-button d-flex justify-content-start align-items-center" (click)=" signinwithFacebook()">
+                         <i class="fa fa-facebook ml-2"></i> <span class="ml-5 px-4">Continue with facebook</span> </button>
+            <button class="btn btn-danger btn-block continue google-button d-flex justify-content-start align-items-center" (click)=" signinwithGoogle()">
+                 <i class="fa fa-google ml-2"></i>
+                  <span class="ml-5 px-4">Continue with Google</span> 
+                </button>
+        </div>
+        <div class="p-3 d-flex flex-row justify-content-center align-items-center member">
+            <span>Not a member? </span>
+            <a href="#" class="text-decoration-none ml-2">SIGNUP</a> </div>
+        <div class="card-block">
+            <button class="btn btn-danger" (click)="logOut()" type="reset">Sign out</button>
+        </div>
+    </div>
+    <div class="card text-center">
+        <h6 class="card-header">
+            User details
+        </h6>
+        <div class="card-block"></div>
+        <img *ngIf="user.photoUrl" src="{{user.photoUrl}}" alt="" class="card-img-top img-responsive photo">
+        <div class="card-block">
+            <div></div>
+            <h4 class="card-title">{{user.name}}</h4>
+            <p class="card-text">{{user.email}}</p>
+            <p class="card-text">Logged in with:{{user.provider}}</p>
+        </div>
+
+    </div>
+
+</div>
