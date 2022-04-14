@@ -32,7 +32,7 @@ import { ApiService } from './api.service';
           {
             id: GoogleLoginProvider.PROVIDER_ID,
             provider: new GoogleLoginProvider(
-              '220127869531-064j89mrhaqfb21tf9q6cfjg49q76j68.apps.googleusercontent.com'
+              '220127869531-d7s3c8d358d3tr80tgkgceujnnrjjauj.apps.googleusercontent.com'
             )
           },
           {
