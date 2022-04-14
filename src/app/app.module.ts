@@ -37,7 +37,7 @@ import { ApiService } from './api.service';
           },
           {
             id: FacebookLoginProvider.PROVIDER_ID,
-            provider: new FacebookLoginProvider('440482981170265')
+            provider: new FacebookLoginProvider('382130207118208')
           },
           
         ],
